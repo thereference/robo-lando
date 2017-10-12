@@ -1,5 +1,5 @@
 {
-  "name": "thereference/robo-drush",
+  "name": "thereference/robo-lando",
   "description": "Lando extension for Robo Task Runner",
   "type": "robo-tasks",
   "license": "MIT",
@@ -22,7 +22,6 @@
     "consolidation/Robo": "~1"
   },
   "require-dev": {
-    "phpunit/phpunit": "~4.4",
-    "drush/drush": "8.1.12"
+    "phpunit/phpunit": "~4.4"
   }
 }

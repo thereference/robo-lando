@@ -2,6 +2,8 @@
 
 Extension to execute Lando commands in [Robo](https://github.com/Codegyre/Robo).
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/a9d18a1b-f5b0-4e67-868b-d8bee5ab595b/mini.png)](https://insight.sensiolabs.com/projects/a9d18a1b-f5b0-4e67-868b-d8bee5ab595b) [![Build Status](https://travis-ci.org/thereference/robo-lando.svg?branch=master)](https://travis-ci.org/thereference/robo-lando) [![Latest Stable Version](https://poser.pugx.org/thereference/robo-lando/v/stable)](https://packagist.org/packages/thereference/robo-lando) [![Total Downloads](https://poser.pugx.org/thereference/robo-lando/downloads)](https://packagist.org/packages/thereference/robo-lando) [![Latest Unstable Version](https://poser.pugx.org/thereference/robo-lando/v/unstable)](https://packagist.org/packages/thereference/robo-lando) [![License](https://poser.pugx.org/thereference/robo-lando/license)](https://packagist.org/packages/thereference/robo-lando)
+
 Runs Lando commands in stack. You can define global options for all commands (like Lando init).
 
 The option -y assumed by default but can be overridden on calls to `exec()` by passing `false` as the second parameter.
@@ -18,11 +20,9 @@ The option -y assumed by default but can be overridden on calls to `exec()` by p
 
 ### Versions
 
-- `~1.0`: Robo <= 0.4.5
-- `~2.1`: Robo >= 0.5.2
-- `~3.0`: Robo >= 1.0.0-RC1
+- `~1.0`: Robo >= 1.0.0-RC1
 
-Add `"legovaer/robo-lando": "~3"` to your composer.json:
+Add `"thereference/robo-lando": "~1"` to your composer.json:
 
 ```json
     {
@@ -45,12 +45,9 @@ Use the trait (according to your used version) in your RoboFile:
 ```php
 class RoboFile extends \Robo\Tasks
 {
-    // if you use ~2.1 for Robo >=0.5.2, or ~3 for Robo >=1.0.0-RC1
+    // ~1 for Robo >=1.0.0-RC1
     use \TheReference\Robo\Task\Lando\loadTasks;
 
-    // if you use ~1.0 for Robo ~0.4
-    use \TheReference\Robo\Task\Lando;
-    
     //...
 }
 ```
