@@ -1,0 +1,28 @@
+{
+  "name": "thereference/robo-drush",
+  "description": "Lando extension for Robo Task Runner",
+  "type": "robo-tasks",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Levi Govaerts",
+      "email": "lgovaerts@reference.be"
+    }
+  ],
+  "scripts": {
+    "test": "robo --ansi test"
+  },
+  "autoload": {
+    "psr-4": {
+      "TheReference\\Robo\\Task\\Lando\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.5.0",
+    "consolidation/Robo": "~1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.4",
+    "drush/drush": "8.1.12"
+  }
+}
